@@ -63,7 +63,15 @@
    */
   const preloader = document.querySelector('#preloader');
   if (preloader) {
+    // Eliminar el preloader inmediatamente cuando el DOM esté listo
+    document.addEventListener('DOMContentLoaded', () => {
+      preloader.style.display = 'none';
+      preloader.remove();
+    });
+
+    // Asegurarnos de que también se elimine cuando la ventana esté completamente cargada
     window.addEventListener('load', () => {
+      preloader.style.display = 'none';
       preloader.remove();
     });
   }

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Programacion Didactica</title>
+  <title>Python y Ciclo de Software</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -23,6 +23,8 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/projects.css" rel="stylesheet">
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
@@ -38,48 +40,27 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">NextCode</h1>
-        <span>.</span>
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid">
+      <a href="index.html" class="logo">
+        <h1>Python<span>EDU</span></h1>
       </a>
 
-      <nav id="navmenu" class="navmenu">
+      <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero" class="active">Inicio<br></a></li>
-          <li><a href="#about">Metodologia</a></li>
-          <li><a href="#services">Didactica</a></li>
-          <li><a href="#portfolio">Historia</a></li>
-          <li><a href="#team">Proyectos</a></li>
-          <li><a href="blog.html">Herramientas</a></li>
-          <li class="dropdown"><a href="#"><span>Niveles</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Programacion </a></li>
-              <li class="dropdown"><a href="#"><span>Avanzado</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Logica</a></li>
-                  <li><a href="#">Dev ops</a></li>
-                  <li><a href="#">Ciclos de desarrollo</a></li>
-                  <li><a href="#">cloud</a></li>
-                  <li><a href="#">Seguridad</a></li>
-                </ul>
-              </li>
-              <li><a href="#">TinkerCard</a></li>
-              <li><a href="#">Scracth
-             
-            </ul>
-          </li>
-          <li><a href="#contact">Aprende Ahora
+          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about">Fundamentos de Python</a></li>
+          <li><a class="nav-link scrollto" href="#services">Ciclo de Vida del Software</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Proyectos Colaborativos</a></li>
+          <li><a class="nav-link scrollto" href="#exercises">Ejercicios Prácticos</a></li>
+          <li><a class="nav-link scrollto" href="#resources">Recursos y Soporte</a></li>
+          <li><a class="nav-link scrollto" href="#feedback">Reflexión y Retroalimentación</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
-      <a class="btn-getstarted" href="index.html#about">Programa ya!
-
+      <a href="#about" class="btn-getstarted scrollto">¡Programa ya!</a>
     </div>
   </header>
 
@@ -89,12 +70,12 @@
     <section id="hero" class="hero section">
 
       <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out">
-        <img src="assets/img/Imagen-1logox.jpeg"img-fluid animated alt="">
-        <h1>Bienvenido</span> a Programacion 
-        <p>Et voluptate esse accusantium accusamus natus reiciendis quidem voluptates similique aut.</p>
-        <div class="d-flex">
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        <img src="assets/img/hero-img.png" class="img-fluid animated" alt="Python para estudiantes">
+        <h1>Programación Básica con Python y Ciclo de Desarrollo de Software</h1>
+        <p class="lead">Aprende los fundamentos de programación en Python mientras desarrollas habilidades de trabajo en equipo y comprendes el ciclo de vida del software. Diseñado especialmente para estudiantes de 8° y 9° grado.</p>
+        <div class="d-flex gap-3">
+          <a href="#about" class="btn-get-started scrollto">Comenzar Aprendizaje</a>
+          <a href="#portfolio" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-people"></i><span>Ver Proyectos Colaborativos</span></a>
         </div>
       </div>
 
@@ -109,33 +90,33 @@
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-activity icon"></i></div>
-              <h4><a href="" class="stretched-link">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bi bi-code-slash icon"></i></div>
+              <h4><a href="" class="stretched-link">Fundamentos Python</a></h4>
+              <p>Aprende las bases de programación con Python de manera práctica y divertida</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-              <h4><a href="" class="stretched-link">Sed ut perspici</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <div class="icon"><i class="bi bi-diagram-2 icon"></i></div>
+              <h4><a href="" class="stretched-link">Desarrollo Ágil</a></h4>
+              <p>Conoce las metodologías ágiles y el ciclo de vida del software moderno</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-              <h4><a href="" class="stretched-link">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bi bi-people icon"></i></div>
+              <h4><a href="" class="stretched-link">Trabajo en Equipo</a></h4>
+              <p>Desarrolla habilidades de colaboración en proyectos de programación</p>
             </div>
           </div><!-- End Service Item -->
 
           <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
             <div class="service-item position-relative">
-              <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <div class="icon"><i class="bi bi-laptop icon"></i></div>
+              <h4><a href="" class="stretched-link">Proyectos Reales</a></h4>
+              <p>Aplica tus conocimientos en proyectos prácticos y significativos</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -150,8 +131,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Fundamentos de Python</h2>
+        <p>Aprende los conceptos básicos de programación con Python de manera práctica y colaborativa</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
@@ -160,94 +141,85 @@
 
           <div class="col-lg-5">
             <div class="about-img">
-              <img src="assets/img/about-portrait.jpg" class="img-fluid" alt="">
+              <img src="assets/img/about-portrait.jpg" class="img-fluid" alt="Fundamentos de Python">
             </div>
           </div>
 
           <div class="col-lg-7">
-            <h3 class="pt-0 pt-lg-5">Neque officiis dolore maiores et exercitationem quae est seda lidera pat claero</h3>
+            <h3 class="pt-0 pt-lg-5">Conceptos Fundamentales</h3>
 
             <!-- Tabs -->
             <ul class="nav nav-pills mb-3">
-              <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">Saepe fuga</a></li>
-              <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">Voluptates</a></li>
-              <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">Corrupti</a></li>
+              <li><a class="nav-link active" data-bs-toggle="pill" href="#about-tab1">Variables y Tipos</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab2">Condicionales</a></li>
+              <li><a class="nav-link" data-bs-toggle="pill" href="#about-tab3">Bucles</a></li>
             </ul><!-- End Tabs -->
 
             <!-- Tab Content -->
             <div class="tab-content">
 
               <div class="tab-pane fade show active" id="about-tab1">
-
-                <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                <p class="fst-italic">Las variables son como contenedores que almacenan información en nuestros programas.</p>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Tipos de Datos Básicos</h4>
+                </div>
+                <p>Números enteros, decimales, texto y booleanos son los tipos de datos fundamentales en Python.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                  <h4>Operaciones con Variables</h4>
                 </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <p>Aprende a realizar operaciones matemáticas y manipular texto con variables.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                  <h4>Ejercicios Prácticos</h4>
                 </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                </div>
-                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
-
-              </div><!-- End Tab 1 Content -->
+                <p>Practica con ejercicios interactivos que te ayudarán a dominar el uso de variables.</p>
+              </div>
 
               <div class="tab-pane fade" id="about-tab2">
-
-                <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                <p class="fst-italic">Los condicionales nos permiten tomar decisiones en nuestros programas.</p>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>If, Else, Elif</h4>
+                </div>
+                <p>Aprende a usar las estructuras condicionales para controlar el flujo de tu programa.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                  <h4>Operadores Lógicos</h4>
                 </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <p>Combina condiciones usando operadores AND, OR y NOT.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                  <h4>Ejercicios de Lógica</h4>
                 </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                </div>
-                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
-
-              </div><!-- End Tab 2 Content -->
+                <p>Resuelve problemas prácticos usando condicionales.</p>
+              </div>
 
               <div class="tab-pane fade" id="about-tab3">
-
-                <p class="fst-italic">Consequuntur inventore voluptates consequatur aut vel et. Eos doloribus expedita. Sapiente atque consequatur minima nihil quae aspernatur quo suscipit voluptatem.</p>
+                <p class="fst-italic">Los bucles nos permiten repetir acciones de manera eficiente.</p>
+                <div class="d-flex align-items-center mt-4">
+                  <i class="bi bi-check2"></i>
+                  <h4>Bucles For</h4>
+                </div>
+                <p>Aprende a usar bucles for para iterar sobre secuencias de datos.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Repudiandae rerum velit modi et officia quasi facilis</h4>
+                  <h4>Bucles While</h4>
                 </div>
-                <p>Laborum omnis voluptates voluptas qui sit aliquam blanditiis. Sapiente minima commodi dolorum non eveniet magni quaerat nemo et.</p>
+                <p>Usa bucles while para repetir acciones mientras se cumpla una condición.</p>
 
                 <div class="d-flex align-items-center mt-4">
                   <i class="bi bi-check2"></i>
-                  <h4>Incidunt non veritatis illum ea ut nisi</h4>
+                  <h4>Ejercicios de Repetición</h4>
                 </div>
-                <p>Non quod totam minus repellendus autem sint velit. Rerum debitis facere soluta tenetur. Iure molestiae assumenda sunt qui inventore eligendi voluptates nisi at. Dolorem quo tempora. Quia et perferendis.</p>
-
-                <div class="d-flex align-items-center mt-4">
-                  <i class="bi bi-check2"></i>
-                  <h4>Omnis ab quia nemo dignissimos rem eum quos..</h4>
-                </div>
-                <p>Eius alias aut cupiditate. Dolor voluptates animi ut blanditiis quos nam. Magnam officia aut ut alias quo explicabo ullam esse. Sunt magnam et dolorem eaque magnam odit enim quaerat. Vero error error voluptatem eum.</p>
-
-              </div><!-- End Tab 3 Content -->
+                <p>Practica con ejercicios que requieren el uso de bucles.</p>
+              </div>
 
             </div>
 
@@ -298,57 +270,45 @@
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section">
-
       <div class="container" data-aos="zoom-out">
-
         <div class="row g-5">
-
           <div class="col-lg-8 col-md-6 content d-flex flex-column justify-content-center order-last order-md-first">
-            <h3>Alias sunt quas <em>Cupiditate</em> oluptas hic minima</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <a class="cta-btn align-self-start" href="#">Call To Action</a>
+            <h3>¡Comienza tu viaje en la <em>Programación</em> con Python!</h3>
+            <p>¿Listo para dar el primer paso en el mundo del desarrollo de software? Nuestro curso está diseñado para estudiantes como tú, con ejercicios prácticos, proyectos reales y apoyo continuo. Aprende a tu ritmo y desarrolla las habilidades que necesitas para el futuro.</p>
+            <a class="cta-btn align-self-start" href="#about">Empieza Ahora</a>
           </div>
-
           <div class="col-lg-4 col-md-6 order-first order-md-last d-flex align-items-center">
             <div class="img">
-              <img src="assets/img/cta.jpg" alt="" class="img-fluid">
+              <img src="assets/img/services-3.jpg" alt="Estudiante programando en Python" class="img-fluid rounded shadow">
             </div>
           </div>
-
         </div>
-
       </div>
-
     </section><!-- /Call To Action Section -->
 
     <!-- Onfocus Section -->
     <section id="onfocus" class="onfocus section dark-background">
-
       <div class="container-fluid p-0" data-aos="fade-up">
-
         <div class="row g-0">
           <div class="col-lg-6 video-play position-relative">
-            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+            <a href="https://www.youtube.com/watch?v=rfscVS0vtbw" class="glightbox pulsating-play-btn"></a>
           </div>
           <div class="col-lg-6">
             <div class="content d-flex flex-column justify-content-center h-100">
-              <h3>Voluptatem dignissimos provident quasi corporis</h3>
+              <h3>Aprende Python en un ambiente colaborativo</h3>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Desarrolla tus habilidades de programación mientras trabajas en equipo y aplicas metodologías ágiles de desarrollo.
               </p>
               <ul>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bi bi-check-circle"></i> Aprende con proyectos prácticos y relevantes para el mundo real</li>
+                <li><i class="bi bi-check-circle"></i> Trabaja en equipo usando herramientas profesionales de desarrollo</li>
+                <li><i class="bi bi-check-circle"></i> Recibe retroalimentación constante de instructores y compañeros mientras desarrollas tus habilidades de programación y trabajo en equipo</li>
               </ul>
-              <a href="#" class="read-more align-self-start"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+              <a href="#portfolio" class="read-more align-self-start"><span>Ver Proyectos</span><i class="bi bi-arrow-right"></i></a>
             </div>
           </div>
         </div>
-
       </div>
-
     </section><!-- /Onfocus Section -->
 
     <!-- Features Section -->
@@ -361,42 +321,42 @@
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
               <i class="bi bi-binoculars" style="color: #0dcaf0;"></i>
-              <h4>Modinest</h4>
+              <h4>Análisis</h4>
             </a>
           </li><!-- End Tab 1 Nav -->
 
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
               <i class="bi bi-box-seam" style="color: #6610f2;"></i>
-              <h4>Undaesenti</h4>
+              <h4>Diseño</h4>
             </a>
           </li><!-- End Tab 2 Nav -->
 
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
               <i class="bi bi-brightness-high" style="color: #20c997;"></i>
-              <h4>Pariatur</h4>
+              <h4>Desarrollo</h4>
             </a>
           </li><!-- End Tab 3 Nav -->
 
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
               <i class="bi bi-command" style="color: #df1529;"></i>
-              <h4>Nostrum</h4>
+              <h4>Pruebas</h4>
             </a>
           </li><!-- End Tab 4 Nav -->
 
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-5">
               <i class="bi bi-easel" style="color: #0d6efd;"></i>
-              <h4>Adipiscing</h4>
+              <h4>Despliegue</h4>
             </a>
           </li><!-- End Tab 5 Nav -->
 
           <li class="nav-item col-6 col-md-4 col-lg-2">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-6">
               <i class="bi bi-map" style="color: #fd7e14;"></i>
-              <h4>Reprehit</h4>
+              <h4>Mantenimiento</h4>
             </a>
           </li><!-- End Tab 6 Nav -->
 
@@ -407,24 +367,21 @@
           <div class="tab-pane fade active show" id="features-tab-1">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-                <h3>Modinest</h3>
+                <h3>Análisis de Requisitos</h3>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  La fase inicial donde identificamos y documentamos las necesidades del proyecto.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Recopilación detallada de requerimientos del cliente</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Definición clara de objetivos y alcance del proyecto</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Análisis de viabilidad técnica y recursos necesarios</li>
                 </ul>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Esta etapa es fundamental para establecer una base sólida para el desarrollo del proyecto, asegurando que entendemos completamente las necesidades antes de comenzar.
                 </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/features-1.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-1.svg" alt="Análisis de Requisitos" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 1 -->
@@ -432,25 +389,22 @@
           <div class="tab-pane fade" id="features-tab-2">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Undaesenti</h3>
+                <h3>Diseño de Solución</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Transformamos los requisitos en un diseño técnico detallado que guiará el desarrollo.
                 </p>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  Creación de la arquitectura y estructura del software que satisfará las necesidades identificadas.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Diseño de la arquitectura del sistema</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Definición de interfaces y componentes</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Selección de tecnologías y herramientas apropiadas</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Creación de diagramas y documentación técnica</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-2.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-2.svg" alt="Diseño de Solución" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 2 -->
@@ -458,24 +412,21 @@
           <div class="tab-pane fade" id="features-tab-3">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Pariatur</h3>
+                <h3>Desarrollo e Implementación</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Convertimos el diseño en código funcional, siguiendo las mejores prácticas de programación.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Codificación siguiendo estándares de calidad</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Implementación de funcionalidades planificadas</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Control de versiones y gestión del código</li>
                 </ul>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  Utilizamos Python y frameworks modernos para crear soluciones eficientes y mantenibles.
                 </p>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-3.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-3.svg" alt="Desarrollo" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 3 -->
@@ -483,24 +434,21 @@
           <div class="tab-pane fade" id="features-tab-4">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Nostrum</h3>
+                <h3>Pruebas y Validación</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Aseguramos la calidad del software mediante pruebas exhaustivas y validación.
                 </p>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  Implementamos diferentes niveles de pruebas para garantizar un producto robusto y libre de errores.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Pruebas unitarias y de integración</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Validación de funcionalidades</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Detección y corrección de errores</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-4.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-4.svg" alt="Pruebas" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 4 -->
@@ -508,24 +456,21 @@
           <div class="tab-pane fade" id="features-tab-5">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Adipiscing</h3>
+                <h3>Despliegue</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Implementamos el software en el entorno de producción de manera controlada.
                 </p>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  Aseguramos una transición suave del desarrollo a la producción.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Configuración del entorno de producción</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Migración de datos y sistemas</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Monitoreo del rendimiento y estabilidad</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-5.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-5.svg" alt="Despliegue" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 5 -->
@@ -533,24 +478,21 @@
           <div class="tab-pane fade" id="features-tab-6">
             <div class="row gy-4">
               <div class="col-lg-8 order-2 order-lg-1">
-                <h3>Reprehit</h3>
+                <h3>Mantenimiento y Mejora</h3>
                 <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                  Garantizamos el funcionamiento óptimo y la evolución continua del software.
                 </p>
                 <p class="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  Proporcionamos soporte continuo y mejoras incrementales del sistema.
                 </p>
                 <ul>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="bi bi-check-circle-fill"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Monitoreo y optimización del rendimiento</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Actualizaciones y mejoras continuas</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Soporte técnico y resolución de incidencias</li>
                 </ul>
               </div>
               <div class="col-lg-4 order-1 order-lg-2 text-center">
-                <img src="assets/img/features-6.svg" alt="" class="img-fluid">
+                <img src="assets/img/features-6.svg" alt="Mantenimiento" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content 6 -->
@@ -566,8 +508,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Services</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Ciclo de Vida del Software</h2>
+        <p>Comprende las etapas fundamentales del desarrollo de software y su importancia en la creación de proyectos</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -577,107 +519,104 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services-1.jpg" class="img-fluid" alt="Planeación">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-activity"></i>
+                  <i class="bi bi-clipboard-check"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Nesciunt Mete</h3>
+                <a href="#" class="stretched-link">
+                  <h3>Planeación</h3>
                 </a>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+                <p>Define los objetivos, alcance y recursos necesarios para tu proyecto. Aprende a organizar tareas y asignar roles en equipo.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services-2.jpg" class="img-fluid" alt="Análisis y Diseño">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-broadcast"></i>
+                  <i class="bi bi-diagram-3"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Eosle Commodi</h3>
+                <a href="#" class="stretched-link">
+                  <h3>Análisis y Diseño</h3>
                 </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+                <p>Analiza los requisitos y diseña la estructura de tu programa. Crea diagramas de flujo y pseudocódigo para planificar la implementación.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services-3.jpg" class="img-fluid" alt="Implementación">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-easel"></i>
+                  <i class="bi bi-code-square"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Ledo Markt</h3>
+                <a href="#" class="stretched-link">
+                  <h3>Implementación</h3>
                 </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+                <p>Transforma tu diseño en código Python. Aprende a trabajar en equipo, dividiendo tareas y manteniendo un código organizado.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services-4.jpg" class="img-fluid" alt="Pruebas">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-bounding-box-circles"></i>
+                  <i class="bi bi-bug"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Asperiores Commodit</h3>
+                <a href="#" class="stretched-link">
+                  <h3>Pruebas</h3>
                 </a>
-                <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
-                <a href="service-details.html" class="stretched-link"></a>
+                <p>Aprende a probar tu código, identificar errores y asegurar que el programa funcione correctamente.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-5.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services-5.jpg" class="img-fluid" alt="Mantenimiento">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-calendar4-week"></i>
+                  <i class="bi bi-tools"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Velit Doloremque</h3>
+                <a href="#" class="stretched-link">
+                  <h3>Mantenimiento</h3>
                 </a>
-                <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
-                <a href="service-details.html" class="stretched-link"></a>
+                <p>Mantén y mejora tu código a lo largo del tiempo. Aprende la importancia de la documentación y las actualizaciones.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/services-6.jpg" class="img-fluid" alt="Trabajo en Equipo">
               </div>
               <div class="details position-relative">
                 <div class="icon">
-                  <i class="bi bi-chat-square-text"></i>
+                  <i class="bi bi-people"></i>
                 </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Dolori Architecto</h3>
+                <a href="#" class="stretched-link">
+                  <h3>Trabajo en Equipo</h3>
                 </a>
-                <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
-                <a href="service-details.html" class="stretched-link"></a>
+                <p>Desarrolla habilidades de colaboración, comunicación y resolución de problemas en equipo.</p>
               </div>
             </div>
-          </div><!-- End Service Item -->
+          </div>
 
         </div>
 
@@ -894,60 +833,70 @@
 
     <!-- Faq Section -->
     <section id="faq" class="faq section">
-
       <div class="container-fluid">
-
         <div class="row gy-4">
-
           <div class="col-lg-7 d-flex flex-column justify-content-center order-2 order-lg-1">
-
             <div class="content px-xl-5" data-aos="fade-up" data-aos-delay="100">
-              <h3><span>Frequently Asked </span><strong>Questions</strong></h3>
+              <h3><span>Preguntas </span><strong>Frecuentes</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Aquí encontrarás respuestas a las preguntas más comunes sobre el aprendizaje de Python y el desarrollo de software.
               </p>
             </div>
 
             <div class="faq-container px-xl-5" data-aos="fade-up" data-aos-delay="200">
-
               <div class="faq-item faq-active">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Non consectetur a erat nam at lectus urna duis?</h3>
+                <h3>¿Por qué aprender Python como primer lenguaje de programación?</h3>
                 <div class="faq-content">
-                  <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  <p>Python es ideal para principiantes por su sintaxis clara y legible, similar al pseudocódigo. Además, tiene una gran comunidad, abundante documentación en español y múltiples aplicaciones en áreas como desarrollo web, ciencia de datos, inteligencia artificial y más.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
               <div class="faq-item">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h3>
+                <h3>¿Qué necesito para empezar a programar en Python?</h3>
                 <div class="faq-content">
-                  <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.</p>
+                  <p>Para comenzar solo necesitas un computador con Python instalado (disponible gratuitamente en python.org) y un editor de texto. Nuestra plataforma también ofrece un editor en línea para que puedas practicar directamente desde tu navegador sin necesidad de instalaciones.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
 
               <div class="faq-item">
                 <i class="faq-icon bi bi-question-circle"></i>
-                <h3>Dolor sit amet consectetur adipiscing elit pellentesque?</h3>
+                <h3>¿Cómo funciona el trabajo colaborativo en los proyectos?</h3>
                 <div class="faq-content">
-                  <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis</p>
+                  <p>Los proyectos se desarrollan en equipos de 2-3 estudiantes, utilizando herramientas profesionales como Git para el control de versiones. Cada equipo tiene acceso a mentores, foros de discusión y sesiones de retroalimentación para guiar el proceso de desarrollo.</p>
                 </div>
                 <i class="faq-toggle bi bi-chevron-right"></i>
-              </div><!-- End Faq item-->
+              </div>
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>¿Qué es el ciclo de vida del software y por qué es importante aprenderlo?</h3>
+                <div class="faq-content">
+                  <p>El ciclo de vida del software es el proceso completo de desarrollo, desde la planificación hasta el mantenimiento. Es fundamental aprenderlo porque te enseña a crear software de manera organizada, trabajar en equipo eficientemente y desarrollar productos de calidad que satisfagan las necesidades de los usuarios.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
+
+              <div class="faq-item">
+                <i class="faq-icon bi bi-question-circle"></i>
+                <h3>¿Cómo puedo practicar y mejorar mis habilidades de programación?</h3>
+                <div class="faq-content">
+                  <p>Ofrecemos múltiples recursos para practicar: ejercicios interactivos, proyectos prácticos, desafíos de código y un editor en línea. También recomendamos participar en los foros de discusión, colaborar en proyectos y utilizar plataformas como GitHub para compartir tu código.</p>
+                </div>
+                <i class="faq-toggle bi bi-chevron-right"></i>
+              </div>
 
             </div>
-
           </div>
 
           <div class="col-lg-5 order-1 order-lg-2">
-            <img src="assets/img/faq.jpg" class="img-fluid" alt="" data-aos="zoom-in" data-aos-delay="100">
+            <img src="assets/img/faq.jpg" class="img-fluid" alt="Preguntas Frecuentes sobre Python y Desarrollo" data-aos="zoom-in" data-aos-delay="100">
           </div>
         </div>
-
       </div>
-
     </section><!-- /Faq Section -->
 
     <!-- Portfolio Section -->
@@ -955,8 +904,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Proyectos Colaborativos</h2>
+        <p>Trabaja en equipo para crear proyectos prácticos mientras aprendes programación</p>
       </div><!-- End Section Title -->
 
       <div class="container-fluid">
@@ -964,136 +913,59 @@
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-            <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
-          </ul><!-- End Portfolio Filters -->
+            <li data-filter="*" class="filter-active">Todos</li>
+            <li data-filter=".filter-basico">Básico</li>
+            <li data-filter=".filter-intermedio">Intermedio</li>
+            <li data-filter=".filter-avanzado">Avanzado</li>
+          </ul>
 
           <div class="row g-0 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-basico">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/adivina.png" class="img-fluid" alt="Juego Adivina el Número">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Juego Adivina el Número</h4>
+                  <p>Proyecto colaborativo para practicar condicionales y bucles</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal1">Ver Proyecto</a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-basico">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/calculadora.png" class="img-fluid" alt="Calculadora">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/product-1.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Calculadora Básica</h4>
+                  <p>Implementa una calculadora con operaciones básicas</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal2">Ver Proyecto</a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-intermedio">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/todo.png" class="img-fluid" alt="Lista de Tareas">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/branding-1.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Lista de Tareas</h4>
+                  <p>Gestiona tareas usando estructuras de datos</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal3">Ver Proyecto</a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-avanzado">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/projects/web.png" class="img-fluid" alt="Mini Sitio Web">
                 <div class="portfolio-info">
-                  <a href="assets/img/portfolio/books-1.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <h4>Mini Sitio Web</h4>
+                  <p>Crea un sitio web simple usando Flask</p>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projectModal4">Ver Proyecto</a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/app-2.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/product-2.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/branding-2.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/books-2.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/app-3.jpg" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/product-3.jpg" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/branding-3.jpg" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <a href="assets/img/portfolio/books-3.jpg" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-          </div><!-- End Portfolio Container -->
+          </div>
 
         </div>
 
@@ -1101,318 +973,292 @@
 
     </section><!-- /Portfolio Section -->
 
-    <!-- Team Section -->
+    <!-- Recursos Section -->
+    <section id="recursos" class="recursos section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recursos de Aprendizaje</h2>
+        <p>Materiales y herramientas para apoyar tu aprendizaje de Python</p>
+      </div>
+
+      <div class="container">
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="recursos-item">
+              <div class="icon">
+                <i class="bi bi-book"></i>
+              </div>
+              <h3>Documentación</h3>
+              <ul>
+                <li><a href="https://docs.python.org/es/3/" target="_blank">Documentación Oficial de Python</a></li>
+                <li><a href="https://www.w3schools.com/python/" target="_blank">Tutoriales W3Schools</a></li>
+                <li><a href="https://realpython.com/" target="_blank">Real Python</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="recursos-item">
+              <div class="icon">
+                <i class="bi bi-code-square"></i>
+              </div>
+              <h3>Ejercicios</h3>
+              <ul>
+                <li><a href="https://www.hackerrank.com/domains/tutorials/10-days-of-python" target="_blank">HackerRank Python</a></li>
+                <li><a href="https://www.codewars.com/" target="_blank">CodeWars</a></li>
+                <li><a href="https://exercism.org/tracks/python" target="_blank">Exercism Python</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="recursos-item">
+              <div class="icon">
+                <i class="bi bi-play-circle"></i>
+              </div>
+              <h3>Videos</h3>
+              <ul>
+                <li><a href="https://www.youtube.com/playlist?list=PLU8oAlHdN5BlvPxziopYZRd55pdqFwkeS" target="_blank">Curso Python para Principiantes</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLyvsggKtwbLX9LrDnl1-K6QtYo7m0yXWB" target="_blank">Python desde Cero</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PLWtYZ2ejMVJnh0KVllw24XklzJ62WNFsj" target="_blank">Python para Programación</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- /Recursos Section -->
+
+    <!-- Editor de Código Section -->
+    <section id="editor" class="editor section">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Editor de Código en Línea</h2>
+        <p>Practica Python directamente en tu navegador</p>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="editor-container" data-aos="fade-up">
+              <div class="editor-header">
+                <h4>Python Editor</h4>
+                <div class="editor-controls">
+                  <button class="btn btn-primary" onclick="runCode()">Ejecutar</button>
+                  <button class="btn btn-secondary" onclick="resetCode()">Reiniciar</button>
+                </div>
+              </div>
+              <div class="editor-content">
+                <textarea id="codeEditor" class="form-control" rows="10"># Escribe tu código Python aquí
+print("¡Hola, mundo!")</textarea>
+                <div id="output" class="output-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Editor Section -->
+
+    <!-- Ejercicios Section -->
     <section id="team" class="team section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Ejercicios Prácticos</h2>
+        <p>Practica tus habilidades de programación con estos ejercicios interactivos</p>
       </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="row gy-4">
 
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/ejercicios/variables.png" class="img-fluid" alt="Variables y Tipos de Datos">
               </div>
               <div class="member-info">
+                <h4>Variables y Tipos de Datos</h4>
+                <p>Ejercicios básicos para practicar el uso de variables y tipos de datos en Python</p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejercicioModal1">Ver Ejercicios</a>
                 </div>
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="400">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/ejercicios/condicionales.png" class="img-fluid" alt="Condicionales y Bucles">
               </div>
               <div class="member-info">
+                <h4>Condicionales y Bucles</h4>
+                <p>Ejercicios para practicar el uso de if, else, while y for</p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejercicioModal2">Ver Ejercicios</a>
                 </div>
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
               </div>
             </div>
           </div><!-- End Team Member -->
 
-          <div class="col-xl-4 col-md-6 d-flex" data-aos="zoom-in" data-aos-delay="600">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="team-member">
               <div class="member-img">
-                <img src="assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <img src="assets/img/ejercicios/funciones.png" class="img-fluid" alt="Funciones">
               </div>
               <div class="member-info">
+                <h4>Funciones</h4>
+                <p>Ejercicios para practicar la creación y uso de funciones</p>
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejercicioModal3">Ver Ejercicios</a>
                 </div>
-                <h4>William Anderson</h4>
-                <span>CTO</span>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/ejercicios/listas.png" class="img-fluid" alt="Listas y Diccionarios">
+              </div>
+              <div class="member-info">
+                <h4>Listas y Diccionarios</h4>
+                <p>Ejercicios para practicar el manejo de estructuras de datos</p>
+                <div class="social">
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejercicioModal4">Ver Ejercicios</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/ejercicios/archivos.png" class="img-fluid" alt="Manejo de Archivos">
+              </div>
+              <div class="member-info">
+                <h4>Manejo de Archivos</h4>
+                <p>Ejercicios para practicar la lectura y escritura de archivos</p>
+                <div class="social">
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejercicioModal5">Ver Ejercicios</a>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Team Member -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="team-member">
+              <div class="member-img">
+                <img src="assets/img/ejercicios/poo.png" class="img-fluid" alt="Programación Orientada a Objetos">
+              </div>
+              <div class="member-info">
+                <h4>POO</h4>
+                <p>Ejercicios para practicar programación orientada a objetos</p>
+                <div class="social">
+                  <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ejercicioModal6">Ver Ejercicios</a>
+                </div>
               </div>
             </div>
           </div><!-- End Team Member -->
 
         </div>
-
       </div>
 
     </section><!-- /Team Section -->
 
-    <!-- Recent Posts Section -->
-    <section id="recent-posts" class="recent-posts section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Recent Blog Posts</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-        </div><!-- End recent posts list -->
-
-      </div>
-
-    </section><!-- /Recent Posts Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="mb-5">
-        <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen=""></iframe>
-      </div><!-- End Google Maps -->
-
-      <div class="container" data-aos="fade">
-
-        <div class="row gy-5 gx-lg-5">
-
-          <div class="col-lg-4">
-
-            <div class="info">
-              <h3>Get in touch</h3>
-              <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
-
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>info@example.com</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-
+    <!-- Modales de Ejercicios -->
+    <div class="modal fade" id="ejercicioModal1" tabindex="-1" aria-labelledby="ejercicioModal1Label" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="ejercicioModal1Label">Variables y Tipos de Datos</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div><!-- End Contact Form -->
-
+          <div class="modal-body">
+            <h6>Ejercicio 1: Calculadora de Edad</h6>
+            <p>Crea un programa que pida al usuario su año de nacimiento y calcule su edad actual.</p>
+            <div class="editor-container">
+              <textarea id="codeEditor1" class="form-control" rows="10"># Escribe tu código aquí
+año_actual = 2024
+año_nacimiento = int(input("Ingresa tu año de nacimiento: "))
+edad = año_actual - año_nacimiento
+print(f"Tu edad es: {edad} años")</textarea>
+              <div id="output1" class="output-container"></div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" onclick="runCode()">Ejecutar</button>
+          </div>
         </div>
-
       </div>
+    </div>
 
-    </section><!-- /Contact Section -->
+    <!-- Agregar más modales para los otros ejercicios -->
 
   </main>
 
   <footer id="footer" class="footer dark-background">
-
     <div class="footer-top">
       <div class="container">
         <div class="row gy-4">
           <div class="col-lg-4 col-md-6 footer-about">
             <a href="index.html" class="logo d-flex align-items-center">
-              <span class="sitename">HeroBiz</span>
+              <span class="sitename">PythonEDU</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>A108 Adam Street</p>
-              <p>New York, NY 535022</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-              <p><strong>Email:</strong> <span>info@example.com</span></p>
+              <p>Universidad Pedagógica Nacional</p>
+              <p>Facultad de Ciencia y Tecnología</p>
+              <p>Departamento de Tecnología - Licenciatura</p>
+              <p class="mt-3"><strong>Ubicación:</strong> <span>Calle 72 # 11 - 86, Bogotá</span></p>
+              <p><strong>Email:</strong> <span>pythonedu@pedagogica.edu.co</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Useful Links</h4>
+            <h4>Navegación</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#hero">Inicio</a></li>
+              <li><a href="#about">Fundamentos Python</a></li>
+              <li><a href="#services">Ciclo de Software</a></li>
+              <li><a href="#portfolio">Proyectos</a></li>
+              <li><a href="#team">Ejercicios</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Our Services</h4>
+            <h4>Recursos</h4>
             <ul>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Web Development</a></li>
-              <li><a href="#">Product Management</a></li>
-              <li><a href="#">Marketing</a></li>
-              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#recursos">Documentación</a></li>
+              <li><a href="#editor">Editor en Línea</a></li>
+              <li><a href="#videos">Videotutoriales</a></li>
+              <li><a href="#ejercicios">Práctica</a></li>
+              <li><a href="#contact">Soporte</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Hic solutasetp</h4>
+            <h4>Comunidad</h4>
             <ul>
-              <li><a href="#">Molestiae accusamus iure</a></li>
-              <li><a href="#">Excepturi dignissimos</a></li>
-              <li><a href="#">Suscipit distinctio</a></li>
-              <li><a href="#">Dilecta</a></li>
-              <li><a href="#">Sit quas consectetur</a></li>
+              <li><a href="#">Foro de Estudiantes</a></li>
+              <li><a href="#">Proyectos Destacados</a></li>
+              <li><a href="#">Blog Python</a></li>
+              <li><a href="#">Contribuir</a></li>
+              <li><a href="#">FAQ</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Nobis illum</h4>
+            <h4>Legal</h4>
             <ul>
-              <li><a href="#">Ipsam</a></li>
-              <li><a href="#">Laudantium dolorum</a></li>
-              <li><a href="#">Dinera</a></li>
-              <li><a href="#">Trodelas</a></li>
-              <li><a href="#">Flexo</a></li>
+              <li><a href="#">Términos de Uso</a></li>
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Licencias</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Contacto Legal</a></li>
             </ul>
           </div>
 
@@ -1425,22 +1271,18 @@
 
         <div class="d-flex flex-column align-items-center align-items-lg-start">
           <div>
-            © Copyright <strong><span>MyWebsite</span></strong>. All Rights Reserved
+            © Copyright <strong><span>PythonEDU</span></strong>. Todos los derechos reservados
           </div>
           <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Desarrollado por estudiantes para estudiantes | Universidad Pedagógica Nacional
           </div>
         </div>
 
         <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
-          <a href=""><i class="bi bi-twitter-x"></i></a>
-          <a href=""><i class="bi bi-facebook"></i></a>
-          <a href=""><i class="bi bi-instagram"></i></a>
-          <a href=""><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="github"><i class="bi bi-github"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
         </div>
 
       </div>
@@ -1453,6 +1295,16 @@
 
   <!-- Preloader -->
   <div id="preloader"></div>
+  <script>
+    // Script de respaldo para eliminar el preloader
+    setTimeout(function() {
+      var preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.style.display = 'none';
+        preloader.remove();
+      }
+    }, 2000); // Máximo 2 segundos de espera
+  </script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1462,9 +1314,100 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.24.1/full/pyodide.js"></script>
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/projects.js"></script>
+
+  <!-- Modales de Proyectos -->
+  <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModal1Label">Calculadora Básica</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Este proyecto te enseñará los conceptos básicos de Python, incluyendo funciones y operaciones matemáticas.</p>
+          <div class="editor-container">
+            <textarea id="codeEditor1" class="form-control" rows="10"></textarea>
+            <div id="output1" class="output-container"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="runCode()">Ejecutar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModal2Label">Juego Adivina el Número</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Aprende sobre bucles y condicionales con este divertido juego.</p>
+          <div class="editor-container">
+            <textarea id="codeEditor2" class="form-control" rows="10"></textarea>
+            <div id="output2" class="output-container"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="runCode()">Ejecutar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModal3Label">Lista de Tareas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Implementa una lista de tareas usando clases y objetos en Python.</p>
+          <div class="editor-container">
+            <textarea id="codeEditor3" class="form-control" rows="10"></textarea>
+            <div id="output3" class="output-container"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="runCode()">Ejecutar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projectModal4Label">Mini Sitio Web</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Crea tu primer sitio web usando Flask y Python.</p>
+          <div class="editor-container">
+            <textarea id="codeEditor4" class="form-control" rows="10"></textarea>
+            <div id="output4" class="output-container"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" onclick="runCode()">Ejecutar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 
