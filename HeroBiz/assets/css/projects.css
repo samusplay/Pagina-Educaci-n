@@ -336,4 +336,150 @@
     .modal-ejercicio .modal-dialog {
         margin: 10px;
     }
+}
+
+/* Mejora visual para SVG de proyectos colaborativos */
+.portfolio-content img {
+  display: block;
+  margin: 24px auto 0 auto;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background: none;
+}
+
+/* === Mejora compacta para cards de ejercicios prácticos === */
+.team-member {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  padding: 20px 10px 16px 10px;
+  margin-bottom: 24px;
+  min-height: 220px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+.team-member:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+.team-member .member-img {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-member .member-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.exercise-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #223046;
+  margin-bottom: 6px !important;
+  margin-top: 0 !important;
+}
+.team-member .member-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0;
+}
+.team-member .member-info p {
+  font-size: 0.98rem;
+  color: #444;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.team-member .btn {
+  margin-top: 0;
+  font-size: 0.95rem;
+  padding: 7px 18px;
+  border-radius: 6px;
+  display: inline-block;
+}
+.team-member .member-info .social {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .team-member {
+    min-height: 160px;
+    padding: 14px 4px 10px 4px;
+  }
+  .team-member .member-img {
+    width: 40px;
+    height: 40px;
+  }
+  .exercise-title {
+    font-size: 0.98rem;
+  }
+}
+/* Hace toda la card clickeable */
+.team-member .btn {
+  pointer-events: none;
+}
+.team-member::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.team-member {
+  position: relative;
+}
+.team-member > * {
+  position: relative;
+  z-index: 2;
+}
+.team-member:hover {
+  box-shadow: 0 8px 32px rgba(0,0,0,0.16);
+}
+
+/* Uniformidad total para las cards de ejercicios prácticos */
+#team .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+#team .col-lg-4, #team .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.team-member {
+  height: 100%;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.team-member .member-info {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0;
+}
+@media (max-width: 991px) {
+  .team-member {
+    min-height: 180px;
+  }
 } 

@@ -866,6 +866,8 @@ section,
 .hero .animated {
   margin-bottom: 60px;
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  max-height: 100px; /* Reduciendo la altura máxima de la imagen en la sección Hero */
+  width: auto; /* Permite que el ancho se ajuste proporcionalmente */
 }
 
 @media (min-width: 992px) {
@@ -2955,4 +2957,201 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+
+/* --- Fix para grid y cards de la sección de servicios --- */
+#services .row.gy-5 {
+  align-items: stretch;
+}
+
+#services .col-xl-4,
+#services .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#services .service-item {
+  flex: 1 1 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+#services .service-item .img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 220px;
+  min-height: 220px;
+  max-height: 220px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f6f9ff;
+}
+
+#services .service-item .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#services .service-item .details {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px 24px 24px;
+  width: 100%;
+  background: #fff;
+}
+
+@media (max-width: 991px) {
+  #services .service-item .img {
+    height: 180px;
+    min-height: 180px;
+    max-height: 180px;
+  }
+}
+@media (max-width: 767px) {
+  #services .col-xl-4,
+  #services .col-md-6 {
+    height: auto;
+  }
+  #services .service-item .img {
+    height: 160px;
+    min-height: 160px;
+    max-height: 160px;
+  }
+}
+
+/* Mejora de visibilidad para títulos de la sección de testimonios */
+#testimonials .section-title {
+  display: inline-block;
+  background: rgba(255,255,255,0.75);
+  border-radius: 18px;
+  padding: 32px 32px 24px 32px;
+  margin: 0 auto 40px auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  max-width: 900px;
+}
+
+#testimonials .section-title h2,
+#testimonials .section-title p {
+  color: #223046 !important;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+
+#testimonials .section-title h2 {
+  font-weight: 800;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+#testimonials .section-title p {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+/* Centrado horizontal y responsivo del título de testimonios */
+#testimonials .container.section-title {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 0;
+}
+
+#testimonials .section-title {
+  width: 90%;
+  max-width: 800px;
+  margin: 40px auto 40px auto;
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 32px 24px 24px 24px;
+  display: block;
+}
+
+@media (max-width: 991px) {
+  #testimonials .section-title {
+    width: 98%;
+    padding: 24px 8px 16px 8px;
+    font-size: 1.2rem;
+  }
+}
+
+/* === Mejora visual del formulario de contacto === */
+.contact-form-custom {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 36px 32px 28px 32px;
+  margin-bottom: 32px;
+}
+.contact-form-custom input,
+.contact-form-custom textarea {
+  border-radius: 8px;
+  border: 1.5px solid #e0e6ed;
+  background: #f8fafc;
+  font-size: 1.05rem;
+  color: #223046;
+  margin-bottom: 12px;
+  transition: border-color 0.2s;
+}
+.contact-form-custom input:focus,
+.contact-form-custom textarea:focus {
+  border-color: #0ea2bd;
+  background: #fff;
+  outline: none;
+}
+.contact-form-custom button[type="submit"] {
+  background: #0ea2bd;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px rgba(14,162,189,0.10);
+  margin-top: 10px;
+}
+.contact-form-custom button[type="submit"]:hover {
+  background: #0c8a9f;
+  box-shadow: 0 4px 16px rgba(14,162,189,0.18);
+}
+.contact-form-custom .loading,
+.contact-form-custom .sent-message,
+.contact-form-custom .error-message {
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.contact-form-custom .loading {
+  background: #eaf6fb;
+  color: #0ea2bd;
+}
+.contact-form-custom .sent-message {
+  background: #d1f5e0;
+  color: #1a7f4e;
+  font-weight: 600;
+}
+.contact-form-custom .error-message {
+  background: #ffe0e0;
+  color: #c0392b;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .contact-form-custom {
+    padding: 18px 6px 12px 6px;
+  }
 }
