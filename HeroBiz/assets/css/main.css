@@ -240,6 +240,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* Added gap for spacing */
+  gap: 20px; /* Adjust this value as needed */
 }
 
 .header .logo {
@@ -262,10 +264,13 @@ h6 {
 }
 
 .navbar {
-  flex: 1;
-  padding: 0 40px;
+  /* Removed flex: 1; to allow the navbar to take only the space it needs */
+  /* flex: 1; */
+  /* Removed horizontal padding to rely on gap in the container */
+  padding: 0;
   display: flex;
-  justify-content: center;
+  /* Removed justify-content: center; to allow me-auto to work correctly */
+  /* justify-content: center; */
 }
 
 .navbar ul {
@@ -274,19 +279,28 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
-  justify-content: center;
-  gap: 30px;
+  /* Removed justify-content: center; from ul */
+  /* justify-content: center; */
+  gap: 20px; /* Maintaining the gap between list items */
+}
+
+.navbar > ul > li {
+  white-space: nowrap;
+  /* Ensure padding is zero */
+  padding: 0 !important; /* Use !important to override potential conflicting styles */
 }
 
 .navbar a,
 .navbar a:focus {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  font-size: 16px;
-  font-weight: 500;
-  color: var(--color-secondary);
+  /* Removed incorrect justify-content */
+  /* justify-content: space-between; */
+  /* Adjusted padding for spacing */
+  padding: 10px 10px; /* Reduced horizontal padding */
+  font-size: 15px;
+  font-weight: 600;
+  color: #2c4964;
   white-space: nowrap;
   transition: 0.3s;
   position: relative;
@@ -294,7 +308,7 @@ h6 {
 
 .header .btn-getstarted {
   background: #0ea2bd;
-  padding: 8px 25px;
+  padding: 10px 30px; /* Increased padding */
   border-radius: 4px;
   color: #fff;
   white-space: nowrap;
@@ -303,20 +317,23 @@ h6 {
   font-weight: 500;
   display: inline-block;
   text-decoration: none;
-  margin-left: 30px;
-  box-shadow: 0 2px 4px rgba(14, 162, 189, 0.3);
+  /* Removed margin-left to rely on gap */
+  margin-left: 0;
+  box-shadow: 0 4px 8px rgba(14, 162, 189, 0.4); /* More pronounced shadow */
 }
 
 .header .btn-getstarted:hover {
   background: #0c8a9f;
   color: #fff;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(14, 162, 189, 0.4);
+  box-shadow: 0 6px 12px rgba(14, 162, 189, 0.6); /* Stronger shadow on hover */
 }
 
 @media (max-width: 1200px) {
   .header .container-fluid {
     padding: 0 15px;
+    /* Adjusted gap for smaller screens */
+    gap: 10px; /* Adjust this value as needed */
   }
   
   .header .logo {
@@ -332,7 +349,8 @@ h6 {
   }
   
   .header .btn-getstarted {
-    margin-left: 15px;
+    /* Removed margin-left to rely on gap */
+    margin-left: 0;
     padding: 8px 20px;
   }
 }
